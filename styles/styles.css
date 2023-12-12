@@ -1,3 +1,52 @@
+@font-face {
+    font-family: 'Sen';
+    src: url(../assets/fonts/Sen-VariableFont_wght.ttf);
+}
+
 body {
+    margin: 0;
+    background-color: black;
+}
+
+section {
     padding: 0 72px;
+}
+
+.header {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 30%, rgba(24, 24, 35, 1) 30%);
+    padding: 0 72px;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-wrapper__logo {
+    display: flex;
+}
+
+.header-wrapper__links {
+    display: flex;
+    margin: 0;
+}
+
+.links__item {
+    text-decoration: none;
+    color: #ffff;
+    font-family: Sen;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    padding: 32px 24px;
+    display: flex;
+}
+
+.links__item--purple {
+    background-color: #5221E6;
+}
+
+li::marker {
+    content: '';
 }
