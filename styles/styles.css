@@ -8,10 +8,6 @@ body {
     background-color: black;
 }
 
-section {
-    padding: 0 72px;
-}
-
 .header {
     background: rgb(0, 0, 0);
     background: linear-gradient(90deg, rgba(0, 0, 0, 1) 30%, rgba(24, 24, 35, 1) 30%);
@@ -36,7 +32,6 @@ section {
     text-decoration: none;
     color: #ffff;
     font-family: Sen;
-    font-weight: 400;
     line-height: 150%;
     padding: 32px 24px;
     display: flex;
@@ -48,4 +43,48 @@ section {
 
 li::marker {
     content: '';
+}
+
+.im-section {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 30%, rgba(24, 24, 35, 1) 30%);
+    display: flex;
+}
+
+.im-section__Robin-photo {
+    margin: 78px 0 84px 0;
+    width: 750px;
+    height: 650px;
+    background-repeat: round;
+    background-image: url('../assets/images/im-section/c-8J0doMMkg.jpg');
+
+}
+
+.im-section__text {
+    position: absolute;
+    padding: 219px 0 0 35%;
+}
+
+.text__title {
+    width: 738px;
+    margin: 0;
+    color: #ffff;
+    font-family: Sen;
+    font-size: 78px;
+}
+
+.text__title--gray {
+    margin-top: 32px;
+    color: rgba(255, 255, 255, 0.50);
+    font-family: Sen;
+    font-size: 78px;
+}
+
+.text__paragraph {
+    margin: 0;
+    padding: 32px 72px 0 0;
+    color: #ffff;
+    font-family: Sen;
+    font-size: 28px;
+    line-height: 150%;
 }
