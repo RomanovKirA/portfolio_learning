@@ -76,8 +76,7 @@ li::marker {
 .text__title--gray {
     margin-top: 32px;
     color: rgba(255, 255, 255, 0.50);
-    font-family: Sen;
-    font-size: 78px;
+
 }
 
 .text__paragraph {
