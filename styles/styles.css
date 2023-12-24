@@ -6,12 +6,13 @@
 body {
     margin: 0;
     background-color: black;
+    font-family: Sen, sans-serif;
 }
 
 .header {
     background: rgb(0, 0, 0);
     background: linear-gradient(90deg, rgba(0, 0, 0, 1) 30%, rgba(24, 24, 35, 1) 30%);
-    padding: 0 72px;
+    padding: 0 3.85%;
 }
 
 .header-wrapper {
@@ -31,7 +32,6 @@ body {
 .links__item {
     text-decoration: none;
     color: #ffff;
-    font-family: Sen;
     line-height: 150%;
     padding: 32px 24px;
     display: flex;
@@ -41,7 +41,7 @@ body {
     background-color: #5221E6;
 }
 
-li::marker {
+.header-wrapper__links li::marker {
     content: '';
 }
 
@@ -52,8 +52,8 @@ li::marker {
 }
 
 .im-section__Robin-photo {
-    margin: 78px 0 84px 0;
-    width: 750px;
+    margin: 78px 0 84px 3.85%;
+    width: 600px;
     height: 650px;
     background-repeat: round;
     background-image: url('../assets/images/im-section/c-8J0doMMkg.jpg');
@@ -62,14 +62,14 @@ li::marker {
 
 .im-section__text {
     position: absolute;
-    padding: 219px 0 0 35%;
+    top: 219px;
+    left: 35%;
 }
 
 .text__title {
     width: 738px;
     margin: 0;
     color: #ffff;
-    font-family: Sen;
     font-size: 78px;
 }
 
@@ -81,9 +81,63 @@ li::marker {
 
 .text__paragraph {
     margin: 0;
-    padding: 32px 72px 0 0;
+    padding: 32px 3.85% 0 0;
     color: #ffff;
-    font-family: Sen;
     font-size: 28px;
+    line-height: 150%;
+}
+
+.work-experience-section__title {
+    margin: 0;
+    padding: 120px 0 0 3.85%;
+    color: #8491A0;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.work-experience-section__title--white {
+    margin: 0;
+    padding: 8px 0 0 3.85%;
+    color: #ffff;
+    font-size: 55px;
+    line-height: normal;
+}
+
+.work-experience-section__list {
+    padding: 40px 3.85% 0 3.85%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item__score {
+    margin: 0;
+    color: #8491A0;
+    font-size: 117px;
+}
+
+.item__job {
+    margin: 0;
+    color: #ffff;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.item__job-place--google {
+    color: #3CC74E;
+}
+
+.item__job-place--facebook {
+    color: #609BFF;
+}
+
+.item__job-place--dribble {
+    color: #E95D90;
+}
+
+.item__story {
+    margin: 0;
+    padding-top: 22px;
+    color: #8491A0;
     line-height: 150%;
 }
