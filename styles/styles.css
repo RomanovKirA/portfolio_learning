@@ -179,15 +179,10 @@ body {
     line-height: 150%;
 }
 
-.text__link {
+.text__link--ph {
     color: #181823;
     margin-left: 3.85%;
-    padding: 0 0 4px 0;
-    border-left-width: 0px;
-    border-top-width: 0px;
-    border-right-width: 0px;
-    border-bottom: 1px;
-    border-style: solid;
-    border-color: #8491A0;
-    text-decoration-line: none;
+    text-underline-offset: 10px;
+    text-decoration: underline;
+    text-decoration-color: #8491A0;
 }
