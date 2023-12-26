@@ -146,23 +146,23 @@ body {
     padding: 120px 3.5% 0 3.5%;
 }
 
-.skillset-section-wr {
+.skillset-section-wrapper {
     display: flex;
     padding-bottom: 120px;
 }
 
-.wr__text {
+.wrapper__text {
     width: 30%;
 }
 
-.text__title--skillset {
+.text__title-skillset {
     margin: 0;
     color: #ffff;
     font-size: 55px;
     font-weight: 700;
 }
 
-.text__paragraph--skillset {
+.text__paragraph-skillset {
     margin: 0;
     padding-top: 24px;
     padding-right: 30%;
@@ -180,7 +180,7 @@ body {
 }
 
 
-.item--skillset__title {
+.item-skillset__title {
     margin: 0;
     padding: 24px 0 12px 0;
     color: #ffff;
@@ -189,7 +189,7 @@ body {
     line-height: 150%;
 }
 
-.item--skillset__paragraph {
+.item-skillset__paragraph {
     margin: 0;
     color: #8491A0;
     font-size: 16px;
@@ -197,12 +197,12 @@ body {
     line-height: 150%;
 }
 
-.skillset-section__list--images {
+.skillset-section__list-images {
     display: flex;
     justify-content: space-between;
 }
 
-.list--images__item {
+.list-images__item {
     width: 25%;
     display: flex;
     justify-content: center;
