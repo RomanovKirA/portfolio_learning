@@ -285,7 +285,7 @@ body {
     font-weight: 700;
 }
 
-.my-projects-section--left__text {
+.my-projects-section--left__text, .my-projects-section--right__text {
     background-color: #181823;
     padding: 40px 32px;
 }
@@ -307,7 +307,7 @@ body {
     line-height: 150%;
 }
 
-.my-projects-section--left__image {
+.my-projects-section--left__image, .my-projects-section--right__image {
     vertical-align: top;
 }
 
