@@ -142,17 +142,20 @@ body {
     line-height: 150%;
 }
 
-.philosophy-section {
+.philosophy-section,
+.instagram-section {
     margin-top: 144px;
     display: flex;
 }
 
-.philosophy-section__text {
+.philosophy-section__text,
+.instagram-section__text {
     width: 50%;
     background-color: #FFF3E4;
 }
 
-.text__title-philosophy {
+.text__title-philosophy,
+.text__title-instagram {
     margin: 0;
     padding: 120px 0 24px 3.85%;
     color: #181823;
@@ -161,7 +164,8 @@ body {
 
 }
 
-.philosophy-section__image--right {
+.philosophy-section__image--right,
+.instagram-section__image--right {
     background-image: url('../assets/images/philosophy-section/469a981b38d970dbba4b3e085426d149.jpg');
     background-repeat: round;
     width: 50%;
@@ -170,7 +174,8 @@ body {
 
 
 
-.text__paragraph-philosophy {
+.text__paragraph-philosophy,
+.text__paragraph-instagram {
     margin: 0;
     padding: 0 3.85% 134px 3.85%;
     color: #5B6876;
@@ -179,7 +184,8 @@ body {
     line-height: 150%;
 }
 
-.text__link-philosophy {
+.text__link-philosophy,
+.text__link-instagram {
     color: #181823;
     margin-left: 3.85%;
     text-underline-offset: 10px;
@@ -285,7 +291,8 @@ body {
     font-weight: 700;
 }
 
-.wrapper-left__text, .wrapper-right__text {
+.wrapper-left__text,
+.wrapper-right__text {
     background-color: #181823;
     padding: 40px 32px;
 }
@@ -307,7 +314,8 @@ body {
     line-height: 150%;
 }
 
-.wrapper-left__image, .wrapper-right__image {
+.wrapper-left__image,
+.wrapper-right__image {
     vertical-align: top;
 }
 
@@ -332,4 +340,12 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     border: 1px solid #5221E6;
+}
+
+.instagram-section__text {
+    background-color: #FBE4FF;
+}
+
+.instagram-section__image--right {
+    background-image: url('../assets/images/instagram-section/1284652.jpg');
 }
