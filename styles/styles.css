@@ -31,7 +31,7 @@ body {
 
 .links__item {
     text-decoration: none;
-    color: #ffff;
+    color: #fff;
     line-height: 150%;
     padding: 32px 24px;
     display: flex;
@@ -69,7 +69,7 @@ body {
 .text__title {
     width: 738px;
     margin: 0;
-    color: #ffff;
+    color: #fff;
     font-size: 78px;
 }
 
@@ -82,7 +82,7 @@ body {
 .text__paragraph {
     margin: 0;
     padding: 32px 3.85% 0 0;
-    color: #ffff;
+    color: #fff;
     font-size: 28px;
     line-height: 150%;
 }
@@ -98,7 +98,7 @@ body {
 .work-experience-section__title--white {
     margin: 0;
     padding: 8px 0 0 3.85%;
-    color: #ffff;
+    color: #fff;
     font-size: 55px;
     line-height: normal;
 }
@@ -117,7 +117,7 @@ body {
 
 .item__job {
     margin: 0;
-    color: #ffff;
+    color: #fff;
     font-size: 24px;
     font-weight: 700;
     line-height: 150%;
@@ -152,7 +152,7 @@ body {
     background-color: #FFF3E4;
 }
 
-.text__title--ph {
+.text__title-philosophy {
     margin: 0;
     padding: 120px 0 24px 3.85%;
     color: #181823;
@@ -161,7 +161,7 @@ body {
 
 }
 
-.philosophy-section__image--left {
+.philosophy-section__image--right {
     background-image: url('../assets/images/philosophy-section/469a981b38d970dbba4b3e085426d149.jpg');
     background-repeat: round;
     width: 50%;
@@ -170,7 +170,7 @@ body {
 
 
 
-.text__paragraph--ph {
+.text__paragraph-philosophy {
     margin: 0;
     padding: 0 3.85% 134px 3.85%;
     color: #5B6876;
@@ -179,7 +179,7 @@ body {
     line-height: 150%;
 }
 
-.text__link--ph {
+.text__link-philosophy {
     color: #181823;
     margin-left: 3.85%;
     text-underline-offset: 10px;
@@ -202,7 +202,7 @@ body {
 
 .text__title-skillset {
     margin: 0;
-    color: #ffff;
+    color: #fff;
     font-size: 55px;
     font-weight: 700;
 }
@@ -228,7 +228,7 @@ body {
 .item-skillset__title {
     margin: 0;
     padding: 24px 0 12px 0;
-    color: #ffff;
+    color: #fff;
     font-size: 24px;
     font-weight: 700;
     line-height: 150%;
@@ -254,4 +254,82 @@ body {
     align-items: center;
     height: 140px;
     border: 1px solid #181823;
+}
+
+.my-projects-section {
+    display: flex;
+    padding: 120px 3.85% 153px 3.85%;
+}
+
+.my-projects-section--left {
+    width: 50%;
+    padding-right: 1.5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.my-projects-section--left__title {
+    margin: 0;
+    color: #8491A0;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.my-projects-section--left__paragraph {
+    margin: 0;
+    padding: 8px 0 80px 0;
+    width: 64%;
+    color: #fff;
+    font-size: 55px;
+    font-weight: 700;
+}
+
+.my-projects-section--left__text {
+    background-color: #181823;
+    padding: 40px 32px;
+}
+
+.text__title-my-projects {
+    margin: 0;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.text__paragraph-my-projects {
+    margin: 0;
+    padding-top: 13px;
+    color: #8491A0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.my-projects-section--left__image {
+    vertical-align: top;
+}
+
+.my-projects-section--right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.my-projects-section--right__link {
+    width: 247px;
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+    padding: 32px 0;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 150%;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid #5221E6;
 }
