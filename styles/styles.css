@@ -215,7 +215,8 @@ body {
     font-weight: 700;
 }
 
-.text__paragraph-skillset, .dribbble-section__paragraph {
+.text__paragraph-skillset,
+.dribbble-section__paragraph {
     margin: 0;
     padding-top: 24px;
     padding-right: 30%;
@@ -371,7 +372,7 @@ body {
     color: #fff;
 }
 
-.dribbble-section__paragraph{
+.dribbble-section__paragraph {
     width: 53%;
     padding-bottom: 40px;
 }
