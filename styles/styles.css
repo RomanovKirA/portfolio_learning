@@ -149,14 +149,16 @@ body {
 }
 
 .philosophy-section__text,
-.instagram-section__text {
+.instagram-section__text,
+.feedback-section__text {
     width: 50%;
     background-color: #FFF3E4;
 }
 
 .text__title-philosophy,
 .text__title-instagram,
-.dribbble-section__title {
+.dribbble-section__title,
+.text__title-feedback {
     margin: 0;
     padding: 120px 0 24px 3.85%;
     color: #181823;
@@ -176,7 +178,8 @@ body {
 
 
 .text__paragraph-philosophy,
-.text__paragraph-instagram {
+.text__paragraph-instagram,
+.text__paragraph-feedback {
     margin: 0;
     padding: 0 3.85% 134px 3.85%;
     color: #5B6876;
@@ -187,7 +190,8 @@ body {
 
 .text__link-philosophy,
 .text__link-instagram,
-.dribbble-section__link {
+.dribbble-section__link,
+.text__link-feedback {
     color: #181823;
     margin-left: 3.85%;
     text-underline-offset: 10px;
@@ -300,7 +304,8 @@ body {
     padding: 40px 32px;
 }
 
-.text__title-my-projects {
+.text__title-my-projects,
+.text-block__paragraph {
     margin: 0;
     color: #fff;
     font-size: 24px;
@@ -308,7 +313,8 @@ body {
     line-height: 150%;
 }
 
-.text__paragraph-my-projects {
+.text__paragraph-my-projects,
+.text-block__paragraph--gray {
     margin: 0;
     padding-top: 13px;
     color: #8491A0;
@@ -319,7 +325,8 @@ body {
 
 .wrapper-left__image,
 .wrapper-right__image,
-.dribbble-section__image {
+.dribbble-section__image,
+.wrapper__image {
     vertical-align: top;
 }
 
@@ -375,4 +382,50 @@ body {
 .dribbble-section__paragraph {
     width: 53%;
     padding-bottom: 40px;
+}
+
+.feedback-section {
+    padding: 120px 3.5%;
+    display: flex;
+}
+
+.feedback-section__text {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-color: transparent;
+}
+
+.text__title-feedback {
+    color: #fff;
+    padding-top: 0;
+}
+
+.text__paragraph-feedback {
+    color: #8491A0;
+    padding-bottom: 40px;
+}
+
+.text__link-feedback {
+    color: #fff;
+}
+
+.feedback-section__right-side {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 120px;
+}
+
+.wrapper__text-block {
+    border: 1px solid #5B6876;
+    padding: 64px;
+}
+
+.text-block__paragraph {
+    padding-bottom: 64px;
+}
+
+.text-block__paragraph--gray {
+    padding: 0;
 }
