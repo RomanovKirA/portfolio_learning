@@ -69,7 +69,8 @@ body {
     left: 35%;
 }
 
-.text__title {
+.text__title,
+.text__title-form {
     width: 738px;
     margin: 0;
     color: #fff;
@@ -319,7 +320,8 @@ body {
 }
 
 .text__paragraph-my-projects,
-.text-block__paragraph--gray {
+.text-block__paragraph--gray,
+.text__paragraph-form {
     margin: 0;
     padding-top: 13px;
     color: #8491A0;
@@ -469,6 +471,71 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 24px;
+}
+
+.form-section {
+    padding: 120px 10%;
+    display: flex;
+    gap: 24px;
+
+}
+
+.form-section__text {
+    width: 50%;
+}
+
+.text__title-form {
+    font-size: 55px;
+    width: 100%;
+}
+
+.text__paragraph-form {
+    padding-top: 24px;
+}
+
+.form-section__wrapper {
+    width: 50%;
+}
+
+.wrapper__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form__paragraph {
+    color: #fff;
+    font-size: 16px;
+    margin: 0;
+    padding-bottom: 8px;
+}
+
+.form__input,
+.form__textarea {
+    background-color: #181823;
+    margin-bottom: 40px;
+    height: 50px;
+    border: none;
+    font-family: Sen;
+    font-size: 16px;
+    color: #fff;
+}
+
+
+.form__textarea {
+    height: 100px;
+    resize: none;
+}
+
+.form__button {
+    height: 75px;
+    background-color: #5221E6;
+    border: none;
+    font-family: Sen;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 .footer-section {
