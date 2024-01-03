@@ -586,6 +586,7 @@ body {
 @media(max-width:360px) {
     .header {
         background: black;
+        padding: 24px 5.6% 24px 5.6%;
     }
 
     .header-wrapper__mobile-menu {
@@ -601,18 +602,41 @@ body {
         display: block;
     }
 
-    .im-section__text {
-        position: static;
+    /* Paddings for section */
+    .im-section__text,
+    .work-experience-section {
+        padding: 48px 5.6%;
     }
 
-    .text__title {
-        width: 80%;
+    .im-section__text {
+        position: static;
+        width: auto;
+    }
+
+    .text__title,
+    .text__title-philosophy {
+        width: auto;
         font-size: 32px;
+    }
+
+    /* Paddings for elements */
+    .text__title--gray,
+    .text__paragraph,
+    .work-experience-section__title,
+    .work-experience-section__list,
+    .item__score,
+    .item__job {
+        padding: 0;
+    }
+
+    .text__paragraph {
+        font-size: 18px;
+        padding-top: 16px;
     }
 
     .im-section__Robin-photo {
         margin: 0;
-        width: 100%;
+        width: auto;
         height: 288px;
         background-image: url('../assets/images/header/mobile.png');
         background-size: cover;
@@ -621,6 +645,51 @@ body {
     .work-experience-section__list {
         flex-direction: column;
     }
+
+    .work-experience-section__title--white {
+        font-size: 32px;
+
+    }
+
+    .work-experience-section__title--white>br {
+        display: none;
+    }
+
+    .item__story {
+        padding: 16px 0 48px 0;
+    }
+
+    .list__item-dribble>.item__story {
+        padding-bottom: 0;
+    }
+
+    .item__story>br {
+        display: none;
+    }
+
+    .philosophy-section,
+    .instagram-section {
+        margin: 0;
+        display: block;
+    }
+
+    .philosophy-section__text,
+    .instagram-section__text,
+    .philosophy-section__image--right,
+    .instagram-section__image--right {
+        width: auto;
+    }
+
+    .philosophy-section .philosophy-section>.text__title-philosophy,
+    .text__paragraph-philosophy {
+        padding: 0 5.6%;
+    }
+
+    .text__title-philosophy {
+        padding-top: 48px;
+    }
+
+
 
     .photography-section__links-photo {
         flex-wrap: wrap;
