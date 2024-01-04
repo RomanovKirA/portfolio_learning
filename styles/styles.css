@@ -14,16 +14,16 @@ body {
     padding: 0 3.85%;
 }
 
-.header__wrapper {
+.header__navigation {
     display: flex;
     justify-content: space-between;
 }
 
-.header-wrapper__logo {
+.navigation__logo {
     display: flex;
 }
 
-.header-wrapper__links,
+.navigation__links,
 .photography-section__links-photo {
     display: flex;
     margin: 0;
@@ -42,12 +42,12 @@ body {
     background-color: #5221E6;
 }
 
-.header-wrapper__links li::marker,
+.navigation__links li::marker,
 .photography-section__links-photo li::marker {
     content: '';
 }
 
-.header-wrapper__mobile-menu {
+.navigation__mobile-menu {
     display: none;
 }
 
@@ -56,7 +56,7 @@ body {
     display: flex;
 }
 
-.im-section__Robin-photo {
+.im-section__robin-photo {
     margin: 78px 0 84px 3.85%;
     width: 600px;
     height: 650px;
@@ -154,9 +154,7 @@ body {
     display: flex;
 }
 
-.philosophy-section__text,
-.instagram-section__text,
-.feedback-section__text {
+.text-block--left {
     width: 50%;
     background-color: #FFF3E4;
 }
@@ -217,9 +215,7 @@ body {
     font-weight: 700;
 }
 
-.text__paragraph-skillset,
-.dribbble-section__paragraph,
-.photography-section__paragraph {
+.paragraph--padding-top-24px {
     margin: 0;
     padding-top: 24px;
     padding-right: 30%;
@@ -312,9 +308,7 @@ body {
     line-height: 150%;
 }
 
-.text__paragraph-my-projects,
-.text-block__paragraph--gray,
-.text__paragraph-form {
+.paragraph--padding-top-13px {
     margin: 0;
     padding-top: 13px;
     color: #8491A0;
@@ -323,10 +317,7 @@ body {
     line-height: 150%;
 }
 
-.wrapper-left__image,
-.wrapper-right__image,
-.dribbble-section__image,
-.wrapper__image {
+.image-responsive {
     vertical-align: top;
 }
 
@@ -388,6 +379,10 @@ body {
 .photography-section__paragraph {
     width: 53%;
     padding-bottom: 40px;
+}
+
+.dribbble-section__image--mobile {
+    display: none;
 }
 
 .feedback-section {
@@ -549,11 +544,16 @@ body {
     gap: 16px;
 }
 
-.wrapper__paragraph {
+.wrapper__paragraph,
+.wrapper__paragraph--mobile {
     margin: 0;
     padding-top: 142px;
     padding-bottom: 80px;
     color: #8491A0;
+}
+
+.wrapper__paragraph--mobile {
+    display: none;
 }
 
 .footer-section__links {
@@ -582,13 +582,19 @@ body {
     .work-experience-section__title,
     .work-experience-section__list,
     .item__score,
-    .item__job {
+    .item__job,
+    .paragraph--padding-top-24px,
+    .text__title-feedback {
         padding: 0;
     }
 
     /* Paddings for section */
     .im-section__text,
-    .work-experience-section {
+    .work-experience-section,
+    .feedback-section,
+    .photography-section,
+    .form-section,
+    .footer-section {
         padding: 48px 5.6%;
     }
 
@@ -596,7 +602,8 @@ body {
     .text__title-philosophy,
     .text__paragraph-philosophy,
     .text__title-instagram,
-    .text__paragraph-instagram {
+    .text__paragraph-instagram,
+    .my-projects-section {
         padding: 0 5.6%;
     }
 
@@ -605,11 +612,11 @@ body {
         padding: 24px 5.6% 24px 5.6%;
     }
 
-    .header-wrapper__mobile-menu {
+    .navigation__mobile-menu {
         display: block;
     }
 
-    .header-wrapper__links {
+    .navigation__links {
         display: none;
     }
 
@@ -636,7 +643,7 @@ body {
         padding-top: 16px;
     }
 
-    .im-section__Robin-photo {
+    .im-section__robin-photo {
         margin: 0;
         width: auto;
         height: 288px;
@@ -657,7 +664,8 @@ body {
         display: none;
     }
 
-    .item__story {
+    .item__story,
+    .text__paragraph-form {
         padding: 16px 0 48px 0;
     }
 
@@ -678,7 +686,8 @@ body {
     .philosophy-section__text,
     .instagram-section__text,
     .philosophy-section__image--right,
-    .instagram-section__image--right {
+    .instagram-section__image--right,
+    .wrapper__text {
         width: auto;
     }
 
@@ -702,25 +711,42 @@ body {
     }
 
     .skillset-section {
-        padding: 78px 5.6% 64px 5.6%
+        padding: 78px 0 64px 0;
     }
 
-
-
-    .photography-section__links-photo {
-        flex-wrap: wrap;
+    .text__title-skillset {
+        font-size: 32px;
     }
+
+    .text__paragraph-skillset {
+        padding: 16px 0 69px 0;
+    }
+
+    .item-skillset__paragraph {
+        padding-bottom: 48px;
+    }
+
+    .list__item-skillset>.paragraph-photo {
+        padding-bottom: 0;
+    }
+
 
     .skillset-section-wrapper {
         display: block;
+        padding: 0 5.6% 64px 5.6%;
     }
 
     .skillset-section__list {
         display: block;
+        width: auto;
     }
 
-    .wrapper-right__link {
-        display: none;
+    .skillset-section__list-images {
+        flex-wrap: wrap;
+    }
+
+    .list-images__item {
+        width: 49.4%;
     }
 
     .my-projects-section {
@@ -731,6 +757,107 @@ body {
     .my-projects-section__wrapper-right {
         width: 100%;
     }
+
+    .wrapper-left__text,
+    .wrapper-right__text {
+        margin-bottom: 48px;
+    }
+
+    .wrapper-right__text--margin {
+        margin-bottom: 70px;
+    }
+
+    .wrapper-right__link {
+        display: none;
+    }
+
+    .wrapper-left__paragraph {
+        font-size: 32px;
+        width: auto;
+        padding-top: 0;
+    }
+
+    .wrapper-left__image,
+    .wrapper-right__image {
+        height: 400px;
+    }
+
+    .dribbble-section {
+        padding: 78px 5.6% 64px 5.6%;
+    }
+
+    .dribbble-section__paragraph,
+    .photography-section__paragraph {
+        padding: 24px 0 40px 0;
+        width: auto;
+    }
+
+    .dribbble-section__link,
+    .text__link-feedback {
+        padding-bottom: 68px;
+    }
+
+    .dribbble-section__image {
+        display: none;
+    }
+
+    .dribbble-section__image--mobile {
+        display: block;
+    }
+
+    .text__title-feedback {
+        font-size: 32px;
+    }
+
+    .text__paragraph-feedback {
+        padding: 16px 0 40px 0;
+        font-size: 18px;
+    }
+
+    .text__link-feedback {
+        margin: 0;
+    }
+
+    .wrapper__text-block {
+        padding: 32px;
+    }
+
+    .feedback-section__right-side {
+        gap: 48px;
+    }
+
+    .wrapper__image {
+        height: 360px;
+    }
+
+    .photography-section__title {
+        font-size: 32px;
+    }
+
+    .text-block__paragraph {
+        line-height: normal;
+        width: 102%;
+    }
+
+    .photography-section__links-photo {
+        flex-wrap: wrap;
+    }
+
+    /* .links-photo__item {} */
+
+    .form-section {
+        display: block;
+    }
+
+    .text__title-form {
+        font-size: 32px;
+    }
+
+    .form-section__text,
+    .form-section__wrapper {
+        width: auto;
+    }
+
 
     .feedback-section {
         flex-direction: column;
@@ -749,7 +876,17 @@ body {
         display: block;
     }
 
+    .wrapper__paragraph {
+        display: none;
+    }
+
+    .wrapper__paragraph--mobile {
+        padding: 0;
+        display: block;
+    }
+
     .footer-section__links {
+        padding: 48px 0;
         display: block;
     }
 
