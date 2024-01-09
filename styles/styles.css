@@ -5,7 +5,7 @@
 
 body {
     margin: 0;
-    background-color: black;
+    background-color: #000;
     font-family: Sen, sans-serif;
 }
 
@@ -215,7 +215,7 @@ body {
     font-weight: 700;
 }
 
-.paragraph--padding-top-24px {
+.paragraph--medium {
     margin: 0;
     padding-top: 24px;
     padding-right: 30%;
@@ -308,7 +308,7 @@ body {
     line-height: 150%;
 }
 
-.paragraph--padding-top-13px {
+.paragraph--small {
     margin: 0;
     padding-top: 13px;
     color: #8491A0;
@@ -568,21 +568,33 @@ body {
     height: 48px;
 }
 
-@media (max-width:1440px) and (min-width:769px) {}
+@media (max-width:1440px) and (min-width:769px) {
+    .im-section__text {
+        left: 41%;
+    }
 
-@media(max-width:768px) and (min-width:361px) {
+    .text__title {
+        width: 100%;
+    }
 
-    .paddings-768px {
+    .text__paragraph {
+        font-size: 18px;
+    }
+}
+
+@media(max-width:768px) and (min-width:451px) {
+
+    .tablet-padded {
         padding: 80px 5.2%;
     }
 
     .header {
-        background: black;
+        background: #000;
         padding: 24px 5.2% 80px 5.2%;
     }
 
     .im-section {
-        background: black;
+        background: #000;
         display: block;
     }
 
@@ -661,7 +673,7 @@ body {
         width: auto;
     }
 
-    .paragraph--padding-top-24px {
+    .paragraph--medium {
         padding: 24px 0 48px 0;
     }
 
@@ -755,7 +767,7 @@ body {
     }
 
     .photography-section__images {
-        justify-content: normal;
+        justify-content: flex-start;
     }
 
     .images__photo {
@@ -775,25 +787,52 @@ body {
     }
 }
 
-@media(max-width:360px) {
+@media(min-width:451px) and (max-width:669px) {
+    .header {
+        background: #000;
+        padding: 24px 5.6% 24px 5.6%;
+    }
+
+    .navigation__mobile-menu {
+        display: block;
+    }
+
+    .navigation__links {
+        display: none;
+    }
+
+    .photography-section__links-photo {
+        flex-wrap: wrap;
+    }
+
+    .links-photo__list {
+        width: 47%;
+    }
+
+    .images__photo {
+        width: 100%;
+    }
+}
+
+@media(max-width:450px) {
 
     /* Paddings for elements */
-    .elements-padding-360px,
-    .paragraph--padding-top-24px {
+    .elements-mobile-padded,
+    .paragraph--medium {
         padding: 0;
     }
 
     /* Paddings for section */
-    .section-padding-360px {
+    .section-mobile-padded {
         padding: 48px 5.6%;
     }
 
-    .paddings-360px {
+    .mobile-padded {
         padding: 0 5.6%;
     }
 
     .header {
-        background: black;
+        background: #000;
         padding: 24px 5.6% 24px 5.6%;
     }
 
@@ -806,7 +845,7 @@ body {
     }
 
     .im-section {
-        background: black;
+        background: #000;
         display: block;
     }
 
